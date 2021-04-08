@@ -3,9 +3,6 @@ package muveletek;
 
 public class AlapMuveletekFeladat extends javax.swing.JFrame {
 
-    /**
-     * Creates new form AlapMuveletekFeladat
-     */
     public AlapMuveletekFeladat() {
         initComponents();
     }
@@ -24,12 +21,12 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
         btnUJ = new javax.swing.JButton();
         btnEllenorzes = new javax.swing.JButton();
         btnMegoldas = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        txtValasz = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         lblFeladat = new javax.swing.JLabel();
         lblValasz = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        lblStatisztika = new javax.swing.JLabel();
         lblOsszKerdes = new javax.swing.JLabel();
         lblKivonasKerdes = new javax.swing.JLabel();
         lblSzorzasKerdes = new javax.swing.JLabel();
@@ -60,6 +57,11 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
         btnUJ.setText("Új feladat");
 
         btnEllenorzes.setText("Ellenőrzés");
+        btnEllenorzes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEllenorzesActionPerformed(evt);
+            }
+        });
 
         btnMegoldas.setText("Megoldás");
 
@@ -77,17 +79,15 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lblFeladat)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtValasz, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnEllenorzes)
                         .addGap(144, 144, 144))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(11, 11, 11)
                                 .addComponent(lblValasz)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnMegoldas))
@@ -107,7 +107,7 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEllenorzes)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtValasz, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblFeladat))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -118,7 +118,7 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jLabel3.setText("Statisztika");
+        lblStatisztika.setText("Statisztika");
 
         lblOsszKerdes.setText("Össz kérdések száma: 1");
 
@@ -170,7 +170,7 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
+                            .addComponent(lblStatisztika)
                             .addComponent(lblEredmeny))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -178,7 +178,7 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3)
+                .addComponent(lblStatisztika)
                 .addGap(1, 1, 1)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblOsszKerdes)
@@ -199,8 +199,9 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblOsztasKerdes)
                     .addComponent(lblOsztasProba))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(lblEredmeny))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addComponent(lblEredmeny)
+                .addContainerGap())
         );
 
         mnFajl.setText("Fájl");
@@ -228,6 +229,11 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
 
         buttonGroup1.add(jbmOsztas);
         jbmOsztas.setText("Osztás");
+        jbmOsztas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbmOsztasActionPerformed(evt);
+            }
+        });
         mnMuveletek.add(jbmOsztas);
 
         buttonGroup1.add(jbmSzorzas);
@@ -260,6 +266,14 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbmOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbmOsztasActionPerformed
+       lblFeladat.setText("20 / 2 =");
+    }//GEN-LAST:event_jbmOsztasActionPerformed
+
+    private void btnEllenorzesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEllenorzesActionPerformed
+       lblValasz.setText("Jó válasz");
+    }//GEN-LAST:event_btnEllenorzesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -302,11 +316,9 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
     private javax.swing.JButton btnUJ;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JRadioButtonMenuItem jbmKivonas;
     private javax.swing.JRadioButtonMenuItem jbmOsszeadás;
     private javax.swing.JRadioButtonMenuItem jbmOsztas;
@@ -321,6 +333,7 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
     private javax.swing.JLabel lblOsszeadProba;
     private javax.swing.JLabel lblOsztasKerdes;
     private javax.swing.JLabel lblOsztasProba;
+    private javax.swing.JLabel lblStatisztika;
     private javax.swing.JLabel lblSzorzasKerdes;
     private javax.swing.JLabel lblSzorzasProba;
     private javax.swing.JLabel lblValasz;
@@ -329,5 +342,6 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
     private javax.swing.JMenu mnMegnyitas;
     private javax.swing.JMenu mnMentesMaskent;
     private javax.swing.JMenu mnMuveletek;
+    private javax.swing.JTextField txtValasz;
     // End of variables declaration//GEN-END:variables
 }
