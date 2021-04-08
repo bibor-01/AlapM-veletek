@@ -2,7 +2,9 @@
 package muveletek;
 
 public class AlapMuveletekFeladat extends javax.swing.JFrame {
-
+ String szam1 = "20";
+ String szam2 = "2";
+ String eredmeny = "10";
     public AlapMuveletekFeladat() {
         initComponents();
     }
@@ -67,9 +69,7 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
 
         jLabel1.setText("Gyakorlás");
 
-        lblFeladat.setText("5 + 15 =");
-
-        lblValasz.setText("15 nem jó!");
+        lblValasz.setText("Válasz");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -268,11 +268,19 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbmOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbmOsztasActionPerformed
-       lblFeladat.setText("20 / 2 =");
+       lblFeladat.setText("Mennyi: "+szam1+"%"+szam2);
     }//GEN-LAST:event_jbmOsztasActionPerformed
 
     private void btnEllenorzesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEllenorzesActionPerformed
-       lblValasz.setText("Jó válasz");
+  
+        if (txtValasz.getText().equals("")) {
+            lblValasz.setText("Nincs megadva érték");
+        } else if(eredmeny == null ? txtValasz.getText() == null : eredmeny.equals(txtValasz.getText())){
+            lblValasz.setText("Jó válasz!");
+            btnEllenorzes.setEnabled(false);
+        }else{
+            lblValasz.setText("Rossz válasz!");
+        }
     }//GEN-LAST:event_btnEllenorzesActionPerformed
 
     /**

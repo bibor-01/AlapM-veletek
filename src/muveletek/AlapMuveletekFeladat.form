@@ -212,13 +212,10 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblFeladat">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="5 + 15 ="/>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblValasz">
           <Properties>
-            <Property name="text" type="java.lang.String" value="15 nem j&#xf3;!"/>
+            <Property name="text" type="java.lang.String" value="V&#xe1;lasz"/>
           </Properties>
         </Component>
       </SubComponents>
