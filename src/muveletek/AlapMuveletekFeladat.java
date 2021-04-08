@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package muveletek;
 
-/**
- *
- * @author Bibor
- */
 public class AlapMuveletekFeladat extends javax.swing.JFrame {
 
     /**
@@ -27,67 +19,82 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnUJ = new javax.swing.JButton();
+        btnEllenorzes = new javax.swing.JButton();
+        btnMegoldas = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblFeladat = new javax.swing.JLabel();
+        lblValasz = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        lblOsszKerdes = new javax.swing.JLabel();
+        lblKivonasKerdes = new javax.swing.JLabel();
+        lblSzorzasKerdes = new javax.swing.JLabel();
+        lblOsszeadKerdes = new javax.swing.JLabel();
+        lblOsztasKerdes = new javax.swing.JLabel();
+        lblOsszProba = new javax.swing.JLabel();
+        lblOsszeadProba = new javax.swing.JLabel();
+        lblKivonasProba = new javax.swing.JLabel();
+        lblSzorzasProba = new javax.swing.JLabel();
+        lblOsztasProba = new javax.swing.JLabel();
+        lblEredmeny = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        mnFajl = new javax.swing.JMenu();
+        mnMegnyitas = new javax.swing.JMenu();
+        mnMentesMaskent = new javax.swing.JMenu();
+        mnKilep = new javax.swing.JMenu();
+        mnMuveletek = new javax.swing.JMenu();
+        jbmOsszeadás = new javax.swing.JRadioButtonMenuItem();
+        jbmKivonas = new javax.swing.JRadioButtonMenuItem();
+        jbmOsztas = new javax.swing.JRadioButtonMenuItem();
+        jbmSzorzas = new javax.swing.JRadioButtonMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("AlapMuveletek gyakorltatása");
 
-        jButton2.setText("Új feladat");
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jButton1.setText("Ellenőrzés");
+        btnUJ.setText("Új feladat");
 
-        jButton3.setText("Megoldás");
+        btnEllenorzes.setText("Ellenőrzés");
+
+        btnMegoldas.setText("Megoldás");
 
         jLabel1.setText("Gyakorlás");
 
-        jLabel2.setText("5 + 15 =");
+        lblFeladat.setText("5 + 15 =");
+
+        lblValasz.setText("15 nem jó!");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 26, Short.MAX_VALUE)
-                        .addComponent(jLabel2)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblFeladat)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
+                        .addComponent(btnEllenorzes)
                         .addGap(144, 144, 144))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton3)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(11, 11, 11)
+                                .addComponent(lblValasz)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnMegoldas))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton2)))
+                                .addComponent(btnUJ)))
                         .addGap(25, 25, 25))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -95,41 +102,45 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
+                    .addComponent(btnUJ)
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(btnEllenorzes)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
+                    .addComponent(lblFeladat))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnMegoldas)
+                    .addComponent(lblValasz))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+
         jLabel3.setText("Statisztika");
 
-        jLabel4.setText("Össz kérdések száma: 1");
+        lblOsszKerdes.setText("Össz kérdések száma: 1");
 
-        jLabel6.setText("Kivonás: 0");
+        lblKivonasKerdes.setText("Kivonás: 0");
 
-        jLabel7.setText("Szorzás: 0");
+        lblSzorzasKerdes.setText("Szorzás: 0");
 
-        jLabel5.setText("Összeadás: 1");
+        lblOsszeadKerdes.setText("Összeadás: 1");
 
-        jLabel8.setText("Osztás: 0");
+        lblOsztasKerdes.setText("Osztás: 0");
 
-        jLabel9.setText("Öszz próbálkozás száma:1");
+        lblOsszProba.setText("Öszz próbálkozás száma:1");
 
-        jLabel10.setText("Összeadás: 1");
+        lblOsszeadProba.setText("Összeadás: 1");
 
-        jLabel11.setText("Kivonás: 0");
+        lblKivonasProba.setText("Kivonás: 0");
 
-        jLabel12.setText("Szorzás: 0");
+        lblSzorzasProba.setText("Szorzás: 0");
 
-        jLabel13.setText("Osztás: 0");
+        lblOsztasProba.setText("Osztás: 0");
 
-        jLabel14.setText("Eredmény: 0%");
+        lblEredmeny.setText("Eredmény: 0%");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -141,26 +152,26 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(52, 52, 52)
-                                .addComponent(jLabel4))
+                                .addComponent(lblOsszKerdes))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(112, 112, 112)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel8))))
+                                    .addComponent(lblKivonasKerdes)
+                                    .addComponent(lblOsszeadKerdes)
+                                    .addComponent(lblSzorzasKerdes)
+                                    .addComponent(lblOsztasKerdes))))
                         .addGap(62, 62, 62)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel11)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel13)))
+                            .addComponent(lblOsszeadProba)
+                            .addComponent(lblOsszProba)
+                            .addComponent(lblKivonasProba)
+                            .addComponent(lblSzorzasProba)
+                            .addComponent(lblOsztasProba)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel14))))
+                            .addComponent(lblEredmeny))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -170,43 +181,60 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addGap(1, 1, 1)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel9))
+                    .addComponent(lblOsszKerdes)
+                    .addComponent(lblOsszProba))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel10))
+                    .addComponent(lblOsszeadKerdes)
+                    .addComponent(lblOsszeadProba))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel11))
+                    .addComponent(lblKivonasKerdes)
+                    .addComponent(lblKivonasProba))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel12))
+                    .addComponent(lblSzorzasKerdes)
+                    .addComponent(lblSzorzasProba))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel13))
+                    .addComponent(lblOsztasKerdes)
+                    .addComponent(lblOsztasProba))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(jLabel14))
+                .addComponent(lblEredmeny))
         );
 
-        jMenu1.setText("Fájl");
+        mnFajl.setText("Fájl");
 
-        jMenu3.setText("Megnyitás");
-        jMenu1.add(jMenu3);
+        mnMegnyitas.setText("Megnyitás");
+        mnFajl.add(mnMegnyitas);
 
-        jMenu4.setText("Mentés másként");
-        jMenu1.add(jMenu4);
+        mnMentesMaskent.setText("Mentés másként");
+        mnFajl.add(mnMentesMaskent);
 
-        jMenu5.setText("Kilép");
-        jMenu1.add(jMenu5);
+        mnKilep.setText("Kilép");
+        mnFajl.add(mnKilep);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(mnFajl);
 
-        jMenu2.setText("Műveletek");
-        jMenuBar1.add(jMenu2);
+        mnMuveletek.setText("Műveletek");
+
+        buttonGroup1.add(jbmOsszeadás);
+        jbmOsszeadás.setText("Összeadás");
+        mnMuveletek.add(jbmOsszeadás);
+
+        buttonGroup1.add(jbmKivonas);
+        jbmKivonas.setText("Kivonás");
+        mnMuveletek.add(jbmKivonas);
+
+        buttonGroup1.add(jbmOsztas);
+        jbmOsztas.setText("Osztás");
+        mnMuveletek.add(jbmOsztas);
+
+        buttonGroup1.add(jbmSzorzas);
+        jbmSzorzas.setText("Szorzás");
+        mnMuveletek.add(jbmSzorzas);
+
+        jMenuBar1.add(mnMuveletek);
 
         setJMenuBar(jMenuBar1);
 
@@ -215,11 +243,10 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -270,31 +297,37 @@ public class AlapMuveletekFeladat extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnEllenorzes;
+    private javax.swing.JButton btnMegoldas;
+    private javax.swing.JButton btnUJ;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JRadioButtonMenuItem jbmKivonas;
+    private javax.swing.JRadioButtonMenuItem jbmOsszeadás;
+    private javax.swing.JRadioButtonMenuItem jbmOsztas;
+    private javax.swing.JRadioButtonMenuItem jbmSzorzas;
+    private javax.swing.JLabel lblEredmeny;
+    private javax.swing.JLabel lblFeladat;
+    private javax.swing.JLabel lblKivonasKerdes;
+    private javax.swing.JLabel lblKivonasProba;
+    private javax.swing.JLabel lblOsszKerdes;
+    private javax.swing.JLabel lblOsszProba;
+    private javax.swing.JLabel lblOsszeadKerdes;
+    private javax.swing.JLabel lblOsszeadProba;
+    private javax.swing.JLabel lblOsztasKerdes;
+    private javax.swing.JLabel lblOsztasProba;
+    private javax.swing.JLabel lblSzorzasKerdes;
+    private javax.swing.JLabel lblSzorzasProba;
+    private javax.swing.JLabel lblValasz;
+    private javax.swing.JMenu mnFajl;
+    private javax.swing.JMenu mnKilep;
+    private javax.swing.JMenu mnMegnyitas;
+    private javax.swing.JMenu mnMentesMaskent;
+    private javax.swing.JMenu mnMuveletek;
     // End of variables declaration//GEN-END:variables
 }
